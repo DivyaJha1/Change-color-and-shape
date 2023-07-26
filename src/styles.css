@@ -1,0 +1,65 @@
+#game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#game-area {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.shape {
+  width: 100px;
+  height: 100px;
+}
+
+.square {
+  background-color: #f00;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #f00;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #f00;
+}
+
+.rectangle {
+  width: 150px;
+  height: 100px;
+  background-color: #f00;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none; /* Remove border */
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add box shadow */
+  transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
